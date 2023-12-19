@@ -39,6 +39,7 @@ describe('AppComponent', () => {
     app = fixture.componentInstance;
     authService = TestBed.inject(AuthService);
     sessionService = TestBed.inject(SessionService);
+    router = TestBed.inject(Router);
   });
 
   it('should create the app', () => {
