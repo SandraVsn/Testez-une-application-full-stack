@@ -1,0 +1,17 @@
+version: '3.8'
+name: openclassrooms-api
+services:
+  db:
+    image: mysql:8.0
+    container_name: yoga-db
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - 3306:3306
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:
