@@ -30,18 +30,13 @@ class TeacherControllerTest {
 	 @Mock
 	 private TeacherMapper teacherMapper;
 
-	 @Mock
-	 private SecurityContext securityContext;
-
 	 @InjectMocks
 	 private TeacherController teacherController;
 
 	 private Teacher mockTeacher;
 
 	 @BeforeEach
-	 public void setup() {
-	     SecurityContextHolder.setContext(securityContext);
-	     
+	 public void setup() {	     
 	     this.mockTeacher = new Teacher(1L, "Toto", "TOTO", LocalDateTime.now(), LocalDateTime.now());
 	 }
 	 
