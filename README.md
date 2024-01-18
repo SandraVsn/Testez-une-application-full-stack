@@ -22,6 +22,45 @@ Yoga-app is an application where teachers can create a yoga session and clients 
 
    This will start a MySQL container based on the configuration defined in the `docker-compose.yml`.
 
+## Run Back-end
+
+1. Navigate to the project directory:
+    ```bash
+    cd back
+    ```
+
+2. Install dependencies:
+    ```bash
+    mvn clean install
+    ```
+
+3. Run API :
+    ```bash
+    mvn spring-boot:run
+    ```
+
+## Run Front-end
+
+1. Navigate to the project directory:
+    ```bash
+    cd front
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm i
+    ```
+
+2. Run front-end :
+    ```bash
+    npm run start
+    ```
+
+Application is available at http://localhost:4200
+By default the admin account is:
+- login: yoga@studio.com
+- password: test!1234
+
 ## Run Back-end Tests
 
 1. Navigate to the project directory:
